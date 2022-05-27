@@ -18,8 +18,6 @@ public class Homework2Tests {
     @Before
     public void setup() {
         driver = new ChromeDriver();
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     @Test
@@ -57,7 +55,6 @@ public class Homework2Tests {
 
         driver.findElement(By.xpath("//aside/a")).click();
         assert driver.findElement(By.xpath("//article/h1")).getAttribute("innerText").equals("Create a new account");
-
 
 
     }
